@@ -1,0 +1,183 @@
+/* Custom Styles for Rome's World - Clean, Neat, with Personality */
+
+/* Body and Overall Theme */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font for readability */
+  background-color: #f8f9fa; /* Light, neutral background for neatness */
+  color: #495057; /* Subtle text color for elegance */
+}
+
+/* Headings - Add a classic, adventurous serif font for personality */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif; /* Evokes history and exploration */
+  color: #8b4513; /* Terracotta brown for a warm, Roman-inspired accent */
+  font-weight: 600;
+}
+
+/* Navbar - Subtle personality with a soft shadow and hover effects */
+.navbar {
+  border-bottom: 2px solid #e9ecef; /* Clean divider */
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #8b4513 !important; /* Match heading color for cohesion */
+}
+.navbar-nav .nav-link {
+  transition: color 0.3s ease; /* Smooth hover for neat interaction */
+}
+.navbar-nav .nav-link:hover {
+  color: #d2691e !important; /* Warm hover color for personality */
+}
+
+/* Jumbotron - Hero section with a subtle gradient for depth */
+.jumbotron {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); /* Clean gradient */
+  border-radius: 10px; /* Rounded corners for neatness */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for personality */
+}
+
+/* Cards - Add borders and hover effects for a polished, engaging look */
+.card {
+  border: 1px solid #dee2e6; /* Subtle border for neatness */
+  border-radius: 8px; /* Rounded for softness */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover */
+}
+.card:hover {
+  transform: translateY(-2px); /* Lift effect for personality */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+.card-title {
+  color: #8b4513; /* Consistent accent color */
+}
+
+/* Buttons - Custom primary button with warm tones */
+.btn-primary {
+  background-color: #d2691e; /* Terracotta for adventure vibe */
+  border-color: #d2691e;
+  border-radius: 25px; /* Rounded for neatness */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #a0522d; /* Darker shade on hover */
+  transform: scale(1.05); /* Subtle grow for personality */
+}
+
+/* Footer - Simple and clean */
+footer {
+  border-top: 1px solid #dee2e6;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Icons - Add a slight color tint for personality */
+.bi {
+  color: #d2691e; /* Warm tint on all Bootstrap icons */
+}
+
+/* Responsive Adjustments - Ensure neatness on mobile */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 2rem 1rem; /* Tighter spacing for mobile */
+  }
+  .card {
+    margin-bottom: 1rem; /* Better spacing */
+  }
+}
+
+/* Additional styles for goals.html to match site design */
+.site-header {
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+.nav-link {
+  color: #8b4513;
+  text-decoration: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.nav-link:hover {
+  background-color: rgba(210,105,30,0.08);
+  color: #a0522d;
+}
+.nav-link.current {
+  background-color: #d2691e;
+  color: #fff;
+}
+.subtitle {
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+.container {
+  max-width: 920px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.container .card {
+  padding: 1rem 1.2rem;
+}
+.goal h3 {
+  margin-top: 0;
+  color: #8b4513;
+}
+.goal ul {
+  padding-left: 1.2rem;
+}
+.goal li {
+  margin: 0.35rem 0;
+}
+input[type="checkbox"] {
+  margin-right: 0.6rem;
+  transform: scale(1.05);
+}
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 480px) {
+  .nav { gap: 0.4rem; flex-wrap: wrap; }
+  .nav-link { padding: 0.3rem 0.5rem; }
+}
+
+/* Music Cards - Specific styles for the new music section in about.html */
+.music-card .card-img-top {
+  height: 200px; /* Fixed height for neat alignment */
+  object-fit: cover; /* Ensures images scale nicely without distortion */
+  border-bottom: 1px solid #dee2e6; /* Subtle separator */
+}
+
+.music-card .btn {
+  border-radius: 20px; /* Rounded for personality, matching site buttons */
+  font-size: 0.9rem; /* Slightly smaller for card fit */
+  transition: all 0.3s ease; /* Smooth hover */
+}
+
+.music-card .btn:hover {
+  transform: scale(1.05); /* Subtle grow on hover for engagement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.music-card .card-text {
+  font-size: 0.95rem; /* Readable but compact */
+  line-height: 1.5; /* Neat spacing */
+  color: #6c757d; /* Subtle color for descriptions */
+}
+
+/* Responsive adjustments for music cards */
+@media (max-width: 768px) {
+  .music-card .card-img-top {
+    height: 150px; /* Shorter on mobile for better fit */
+  }
+  .music-card .btn {
+    width: 100%; /* Full-width button on small screens for usability */
+  }
+}
